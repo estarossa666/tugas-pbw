@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="Assets/icon.png"/>
+    <title>Contact Us - XYZ Express</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+
+    <script src = "main.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <header class="header2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="Assets/XYZexpress.png" width="100" height="60" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"></img>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" id="list1" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " id="list1" href="blogs.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="list1" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" id="list1" href="contact.html">Contact</a>
+                    </li>
+                  </ul>
+                </ul>
+            </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="logo1">
+        <div class="container" style="margin-top: 100px;">
+            <div class="row text-center mb-3">
+                <h2 class="greeting">Contact Us</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+      <path
+        fill="#FFF"
+        fill-opacity="0"
+        d="M 0 19 C 492 10 492 94 1011 61 L 1441 23 L 1440 150 L 0 150 Z"
+      ></path>
+    </svg>
+
+    <section id="bg-light">
+        <div class="container">
+            <main>
+            <br>         
+                <p class="mb-3" style="text-align: center; color: rgb(0, 0, 0);">If you have questions or need help, please don't hesitate to contact us via the form below.</p>
+                    <div class="row g-4">         
+                        <div class="col-12">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+            
+                        <div class="col-sm-6">
+                          <label for="firstName" class="form-label">First Name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                         </div>
+              
+                        <div class="col-sm-6">
+                          <label for="lastName" class="form-label">Last Name</label>
+                          <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        </div>
+  
+                        <div class="mb-3">
+                          <label for="Message" class="form-label">Message</label>
+                          <textarea class="form-control" id="Message" rows="3"></textarea>
+                        </div>
+  
+                        <div class="col-sm-6">
+                          <input class="form-check-input" type="checkbox" value="" id="terms">
+                          <label class="form-check-label" for="terms" style="color: white;">
+                            I agree to the terms and conditions
+                          </label>
+                        </div>
+  
+                    </div>
+                    <br>
+                    <button class="btn btn-dark" type="button" id="sendButton" onclick="send()">Send</button>
+                    <br>
+
+                    <div id="myModal" class="modal">
+                      <div class="modal-content">
+                        <p>Thank you for contacting us! We will reply to you as soon as possible.</p>
+                        <span class="close"><button class="btn btn-dark">Close</button></span>
+                      </div>
+                    </div>
+
+                    <div id="ModalFail" class="modal">
+                      <div class="modal-content">
+                        <p>You must agree to the terms and conditions to complete the task.</p>
+                        <span class="close1"><button class="btn btn-dark">Close</button></span>
+                      </div>
+                    </div>
+
+                    <p class="mt-4 mb-4" style="text-align: center; color: rgb(0, 0, 0);">You can also reach to us on</p>
+                    <div style="text-align: center;">
+                        <a href="https://www.facebook.com/ilhamsafaat" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/ilham_1" class="fa fa-twitter"></a>
+                        <a href="https://instagram.com/hmsafaat_" class="fa fa-instagram"></a>
+                        <a href="https://www.youtube.com/channel/UCLXFoDQTTACPjc2HlkfSQCQ" class="fa fa-youtube"></a>
+                    </div>
+            </main>
+        </div>
+    </section>
+    
+
+    <section id="bg-light"></section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
+            <path
+              fill="#FFF"
+              fill-opacity="1"
+              d="M 0 19 C 448.78 220.816 1031.011 -62.491 1440.617 24.329 L 1441 23 L 1440 150 L 0 150 Z"
+            ></path>
+          </svg>
+    </section>
+
+    <footer class="bg-light text-black text-center pb-5";">
+        <br>
+        <p>&copy; 2022 Ilham Safaat - 2010631170081 - 4C</p>
+        <p>
+          <a href=# onclick="backtotop()">Back To Top</a>
+        </p>
+    </footer>
+
+</body>
+</html>
